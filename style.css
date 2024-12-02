@@ -1,0 +1,36 @@
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  body{
+    background-color: aqua;
+  }
+  h1{
+    text-align: center;
+    margin: 0%;
+    
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 10px; /* Espacio entre columnas */
+    padding: 20px;
+  }
+  .col {
+    text-align: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
