@@ -1,3 +1,5 @@
+
+}
 video {
     width: 100%;
     max-width: 600px;
@@ -6,11 +8,12 @@ video {
     border-radius: 8px;
   }
   body{
-    background-color: aqua;
-  }
+    background-image: url(imagenes/Fondo\ para\ whatsapp\ Infantil\ Acuarela\ \ Neutro.png);
+  
   h1{
     text-align: center;
     margin: 0%;
+    
     
   }
   .row {
@@ -21,7 +24,6 @@ video {
   }
   .col {
     text-align: center;
-    justify-content: center;
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
