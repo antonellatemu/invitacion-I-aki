@@ -1,21 +1,34 @@
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Grey+Qo&family=Inconsolata:wdth,wght@88.7,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 video {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid transparent; /* Asegura un margen visual */
+    border-radius: 12px; /* Opcional para bordes redondeados */
+    box-shadow: 0 0 20px rgba(68, 223, 37, 0.7); /* Resplandor rosado */
+    transition: transform 0.3s ease-in-out; /* Animación al pasar el ratón */
   }
+  video:hover {
+    transform: scale(1.05); /* Aumenta ligeramente al hacer hover */
+    box-shadow: 0 0 30px rgb(181, 236, 78); /* Intensifica el resplandor */
+}
   body{
     background-image: url(imagenes/Fondo\ para\ whatsapp\ Infantil\ Acuarela\ \ Neutro.png);
+  }
+   
   
   h1{
     text-align: center;
     margin: 0%;
-    
+    font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
     
   }
+  
+  
   .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
@@ -30,9 +43,60 @@ video {
     border: 1px solid #ccc;
     border-radius: 8px;
   }
+  a{
+    text-align: center;
+    margin: 0%;
+    color: #007bff; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita */
+    padding: 8px 16px; /* Espaciado interno */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    transition: all 0.3s ease; /* Transición para hover */
+    font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  }
+  a:hover{
+    color: aqua;
+  }
+  .enlace-ubicacion{
+    display: block; /* Convierte el <a> en un elemento de bloque */
+    text-align: center; /* Alinea texto dentro del enlace */
+    margin: 0 auto; /* Centra el enlace dentro de su contenedor */
+    width: fit-content; /* Ajusta el tamaño al contenido */
+    font-size: x-large;
+    margin-top: 40px;
+}
+.typewriter {
+  overflow: hidden; /* Oculta el texto fuera del área */
+  border-right: 2px solid black; /* Cursor de máquina de escribir */
+  white-space: nowrap; /* Evita el salto de línea */
+  width: 0;
+  animation: typing 3s steps(20, end), blink 0.5s step-end infinite; 
+}
 
-  /* Responsivo para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .row {
-      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #25D366; /* Color de WhatsApp */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #1DA851; /* Color más oscuro al pasar el mouse */
+}
