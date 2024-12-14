@@ -28,21 +28,7 @@ video {
     
   }
   
-  
-  .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    gap: 10px; /* Espacio entre columnas */
-    padding: 20px;
-  }
-  .col {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
+
   a{
     text-align: center;
     margin: 0%;
@@ -86,7 +72,7 @@ video {
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-button {
+.mi-numero {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #25D366; /* Color de WhatsApp */
