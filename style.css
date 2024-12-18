@@ -27,7 +27,11 @@ video {
   font-style: normal;
     
   }
-  
+  @media (max-width: 768px) {
+    h1.typewriter {
+      font-size: 4vw; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+  }
   
   a{
     text-align: center;
@@ -80,7 +84,7 @@ video {
 }
 
 #mi-numero {
-  background-color: #7df1f1; /* Color del botón */
+  background-color: #4cafaf; /* Color del botón */
   color: white;
   border: none;
   padding: 10px 20px;
