@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 video {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
     border: 2px solid transparent; /* Asegura un margen visual */
     border-radius: 12px; /* Opcional para bordes redondeados */
@@ -28,7 +28,7 @@ video {
     
   }
   
-
+  
   a{
     text-align: center;
     margin: 0%;
@@ -51,6 +51,7 @@ video {
     display: block; /* Convierte el <a> en un elemento de bloque */
     text-align: center; /* Alinea texto dentro del enlace */
     margin: 0 auto; /* Centra el enlace dentro de su contenedor */
+    margin-top: 60px;
     width: fit-content; /* Ajusta el tamaño al contenido */
     font-size: x-large;
     margin-top: 40px;
@@ -72,17 +73,33 @@ video {
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-.mi-numero {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #25D366; /* Color de WhatsApp */
+.boton-centro {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espaciado opcional */
+}
+
+#mi-numero {
+  background-color: #7df1f1; /* Color del botón */
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+#mi-numero:hover {
+  background-color: #45a049; /* Color al pasar el mouse */
 }
 
 button:hover {
-  background-color: #1DA851; /* Color más oscuro al pasar el mouse */
+  background-color: #72dde0; /* Color más oscuro al pasar el mouse */
 }
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical dentro del contenedor */
+  margin-top: 60px; /* Espacio superior opcional */
+}
+
